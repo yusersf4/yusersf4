@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.itheima.SpringbootMybatisCrudApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.899 s <<< FAILURE! - in com.itheima.SpringbootMybatisCrudApplicationTests
+testGetById  Time elapsed: 1.057 s  <<< ERROR!
+org.springframework.jdbc.BadSqlGrammarException: 
+
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 12' at line 1
+### The error may exist in com/itheima/mapper/EmpMapper.java (best guess)
+### The error may involve com.itheima.mapper.EmpMapper.getById-Inline
+### The error occurred while setting parameters
+### SQL: select * from where id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 12' at line 1
+; bad SQL grammar []
+	at com.itheima.SpringbootMybatisCrudApplicationTests.testGetById(SpringbootMybatisCrudApplicationTests.java:22)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 12' at line 1
+	at com.itheima.SpringbootMybatisCrudApplicationTests.testGetById(SpringbootMybatisCrudApplicationTests.java:22)
+
